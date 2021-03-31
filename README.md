@@ -45,29 +45,28 @@ Test: "It recognizes a single vowel in a word with multiple characters."
 Code: vowelCounter("cat");
 Expected Output: 1
 
-Describe: 
-Test: 
-Code: 
+## Describe: pigLatin()
+Test: "Take string and pass it into argument"
+Code: stringInput("Hello everyone.")
+Expected Output: Hello everyone.
+
+Test: "Take string and split it into an array"
+Code: stringInput.split(" ");
+Expected Output: ["Hello", "everyone"]
+
+Test: "Take first word from array"
+Code: englishArray[0]
+Expected Output: "Hello"
+
+Test: "Create a vowel array from first word"
+Code: vowelArray
 Expected Output: 
 
+Test: "Check if first letter is a vowel"
+Code: firstLetter = word.charAt(0);
+Expected Output: o
 
-Test: 
-Code: 
-Expected Output: 
-
-Test: 
-Code: 
-Expected Output: 
-
-Test:
-Code: 
-Expected Output: 
-
-Test: 
-Code:
-Expected Output: 
-
-Test: 
+Test: "If first letter is a vowel, add 'way' to the end of the word"
 Code: 
 Expected Output: 
 
