@@ -33,13 +33,13 @@
 4 _Create vowel array_
 5 _Check if first letter is vowel_
 6 _vowel add 'way' to end_
-7 _Create loop that moves consecutive consonants to end till hit vowel_
+7 _Create consenant branch_
 8 _Move letter to end_
 9 _add 'ay' after that_
-10 _Fix 'qu' issue with if statement: break after second vowel_
-11 _retrofit current code to manage vowels_
-12 _ignore other characters_
-13 _Split into array_
+10 _Create loop_
+11 _Fix 'qu' issue with if statement: break after second vowel_
+13 _ignore other characters_
+14 _Split into array_
 
 Test: "It recognizes a single vowel in a word with multiple characters."
 Code: vowelCounter("cat");
@@ -67,12 +67,38 @@ Code: firstLetter = word.charAt(0);
 Expected Output: o
 
 Test: "If first letter is a vowel, add 'way' to the end of the word"
-Code: 
-Expected Output: 
+Code: word = word.concat("way");
+Expected Output: oneway
 
-Test: 
+Test: "Push word into pigLatinArray"
+Code: pigLatinarray.push(word);
+Expected Output: [oneway]
+
+Test: "create branch for words starting with a consonant"
+Code: else { }
+Expected output: ?
+
+Test: "remove first letter and add to end"
+Code: word = word.substring(1)
+      word.concat(firstLetter)
+Expected output: anguagel
+
+Test: "add 'ay' to end of consenant"
+Code: word = word.concat(firstLetter + "ay")
+Expected output: anguagelay
+
+Test: "Create Loop"
+Code: word = 
+Expected output: Oneway anguagelay isway evernay enoughway
+
+Test: "Fix 'qu' issue with if statement: break after second vowel"
 Code: 
-Expected Output: 
+Expected output: 
+
+Test: "Ignore other characters"
+Code: 
+Expected output: 
+
 
 
 ## Known Bugs
